@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("style-guide.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Bold", "Open Sans", sans-serif;
+  color: var(--dark-jungle);
+  background-color: var(--bg-white);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.aside-container {
+  flex: 1 1 30%;
+  min-width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid darkgrey;
+  overflow: hidden;
+}
+
+.aside-fixed-top {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.aside-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.user-state-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding: 1em 1.4em;
+}
+
+.user-state-item {
+  display: flex;
+  align-items: center;
+}
+
+.image-user {
+  height: 2em;
+  width: 2em;
+  background-image: url("../images/maria.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.image-user:hover{
+     transform: scale(1.6);
+     transition: transform 0.3s ease;
+}
+
+.text-user-state span {
+  font-size: smaller;
+  color: var(--gray);
+}
+
+i {
+  color: var(--gray);
+  margin: 3px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex: 1 1 70%;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 60%;
+  text-align: center;
+}
+
+.main-image {
+  height: 12em;
+  width: 12em;
+  background-image: url("../images/hand.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
+  margin-bottom: 1em;
+}
+
+.new-chat {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em 2em 2em;
+}
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  background-color: var(--blue-bell);
+  color: white;
+  height: 3em;
+  width: 11em;
+  border: 0;
+  border-radius: 1%;
+}
+
+.primary-button:hover {
+  background-color: var(--soap);
+  transform: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  /* padding: 1em; */
+}
+
+.chat-list::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-list-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em 1em;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  gap: 1em;
+}
+
+.chat-list-content:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.person-name {
+  font-size: large;
+  font-weight: 500;
+  margin: 0;
+}
+
+.image-chat-list {
+  height: 3em;
+  width: 3em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.image1 {
+  background-image: url("../images/Juanita.jpg");
+}
+
+.image2 {
+  background-image: url("../images/Alberto.jpg");
+}
+
+.image3 {
+  background-image: url("../images/Ignacio.jpg");
+}
+
+.image4 {
+  background-image: url("../images/Cristian.jpg");
+}
+
+.image5 {
+  background-image: url("../images/MariaJose.jpg");
+}
+
+.image6 {
+  background-image: url("../images/Gonzalo.jpg");
+}
+
+.image7 {
+  background-image: url("../images/JuanPablo.jpg");
+}
+
+.image8 {
+  background-image: url("../images/Magdalena.jpg");
+}
